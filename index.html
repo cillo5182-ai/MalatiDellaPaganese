@@ -513,6 +513,112 @@
   }
 
 }
+    /* =========================
+   CLASSIFICA
+========================= */
+
+.standings-section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.standings-section h2 {
+  text-align: center;
+  color: #003b70;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.standings-card {
+  background: white;
+  border-radius: 18px;
+  overflow-x: auto;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+}
+
+.standings-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 750px;
+}
+
+.standings-table th {
+  background: #003b70;
+  color: white;
+  padding: 13px 8px;
+  font-size: 14px;
+}
+
+.standings-table td {
+  padding: 12px 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.standings-table td:nth-child(2) {
+  text-align: left;
+  font-weight: bold;
+}
+
+.paganese-row {
+  background: #eaf4ff;
+  font-weight: bold;
+}
+    /* =========================
+   RISULTATI
+========================= */
+
+.results-section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.results-section h2 {
+  text-align: center;
+  color: #003b70;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.results-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.result-match {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.result-date {
+  font-size: 13px;
+  font-weight: bold;
+  color: #0072c6;
+  margin-bottom: 10px;
+}
+
+.result-teams {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #003b70;
+}
+
+.result-score {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
   </style>
 </head>
 
@@ -1456,7 +1562,63 @@
   </div>
 
 </section>
-                                     
+    <!-- =========================
+     RISULTATI
+========================= -->
+
+<section class="results-section" id="risultati-campionato">
+
+  <h2>⚽ RISULTATI PAGANESE</h2>
+
+  <div class="results-card">
+
+    <div class="result-match">
+      <div class="result-date">6 SETTEMBRE 2026</div>
+
+      <div class="result-teams">
+        <span>Paganese</span>
+        <strong>-</strong>
+        <span>UniPomezia</span>
+      </div>
+
+      <div class="result-score">
+        -
+      </div>
+    </div>
+
+
+    <div class="result-match">
+      <div class="result-date">13 SETTEMBRE 2026</div>
+
+      <div class="result-teams">
+        <span>Latte Dolce</span>
+        <strong>-</strong>
+        <span>Paganese</span>
+      </div>
+
+      <div class="result-score">
+        -
+      </div>
+    </div>
+
+
+    <div class="result-match">
+      <div class="result-date">16 SETTEMBRE 2026</div>
+
+      <div class="result-teams">
+        <span>Paganese</span>
+        <strong>-</strong>
+        <span>Afragolese</span>
+      </div>
+
+      <div class="result-score">
+        -
+      </div>
+    </div>
+
+  </div>
+
+</section>
   </main>
 
   <footer>
