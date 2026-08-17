@@ -7,6 +7,58 @@
   <title>Paganese-Palmese | Malati Della Paganese</title>
 
   <style>
+    .match-teams {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 20px;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  min-width: 120px;
+}
+
+.team img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.team-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #003b70;
+}
+
+.vs {
+  font-size: 26px;
+  font-weight: bold;
+  color: #0072c6;
+}
+
+@media (max-width: 600px) {
+  .match-teams {
+    gap: 15px;
+  }
+
+  .team img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .team-name {
+    font-size: 17px;
+  }
+
+  .vs {
+    font-size: 22px;
+  }
+}
     * {
       box-sizing: border-box;
       margin: 0;
@@ -209,9 +261,19 @@
           PRIMO TURNO · COPPA ITALIA
         </div>
 
-        <div class="teams">
-          Paganese 💙⭐ &nbsp; VS &nbsp; Palmese 🖤❤️
-        </div>
+       <div class="match-teams">
+  <div class="team">
+    <img src="Paganese_Calcio_1926_logo.svg.webp" alt="Stemma Paganese">
+    <div class="team-name">Paganese</div>
+  </div>
+
+  <div class="vs">VS</div>
+
+  <div class="team">
+    <img src="PALMESE_SCUDETTO.jpg" alt="Stemma Palmese">
+    <div class="team-name">Palmese</div>
+  </div>
+</div>
 
         <div class="info">
           📅 30 agosto 2026<br>
