@@ -320,6 +320,10 @@
    STADIO
 ========================= */
 
+/* =========================
+   STADIO
+========================= */
+
 .stadium-section {
   max-width: 1100px;
   margin: 60px auto;
@@ -336,8 +340,19 @@
 .stadium-card {
   background: white;
   border-radius: 20px;
-  padding: 40px;
+  overflow: hidden;
   box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.stadium-photo {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.stadium-info {
+  padding: 35px;
   text-align: center;
 }
 
@@ -349,13 +364,13 @@
 
 .stadium-info p {
   font-size: 18px;
-  margin: 12px 0;
+  margin: 14px 0;
 }
 
 .stadium-button {
   display: inline-block;
   margin-top: 25px;
-  padding: 12px 25px;
+  padding: 13px 28px;
   background: #003b70;
   color: white;
   text-decoration: none;
@@ -369,6 +384,27 @@
 
 @media (max-width: 600px) {
 
+  .stadium-section h2 {
+    font-size: 27px;
+  }
+
+  .stadium-photo {
+    height: 250px;
+  }
+
+  .stadium-info {
+    padding: 25px 15px;
+  }
+
+  .stadium-info h3 {
+    font-size: 21px;
+  }
+
+  .stadium-info p {
+    font-size: 16px;
+  }
+
+}
   .stadium-section h2 {
     font-size: 27px;
   }
@@ -743,27 +779,29 @@
   </div>
 
 </section>
-    <section class="stadium-section" id="stadio">
+  <section class="stadium-section" id="stadio">
 
   <h2>🏟️ STADIO MARCELLO TORRE</h2>
 
   <div class="stadium-card">
 
+    <img
+      src="stadio-marcello-torre.jpg"
+      alt="Stadio Marcello Torre di Pagani"
+      class="stadium-photo"
+    >
+
     <div class="stadium-info">
 
-      <h3>Casa della Paganese Calcio 1926</h3>
+      <h3>La casa degli Azzurrostellati 💙⭐</h3>
 
-      <p>
-        📍 Pagani (SA)
-      </p>
+      <p>📍 <strong>Pagani (SA)</strong></p>
 
-      <p>
-        🏟️ Stadio Marcello Torre
-      </p>
+      <p>🏟️ <strong>Stadio Marcello Torre</strong></p>
 
-      <p>
-        💙⭐ La casa degli Azzurrostellati
-      </p>
+      <p>⚽ Casa della <strong>Paganese Calcio 1926</strong></p>
+
+      <p>👥 <strong>Capienza:</strong> circa 5.000 spettatori</p>
 
       <a
         href="https://www.google.com/maps/search/?api=1&query=Stadio+Marcello+Torre+Pagani"
