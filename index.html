@@ -7,7 +7,98 @@
   <title>Malati Della Paganese | Azzurrostellati</title>
 
   <meta name="description" content="Malati Della Paganese - News, risultati, calciomercato e tutto il mondo azzurrostellato.">
+/* =========================
+   CAMPIONATO
+========================= */
 
+.championship-section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.championship-section h2 {
+  font-size: 34px;
+  color: #003b70;
+  margin-bottom: 30px;
+}
+
+.championship-header {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.championship-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.championship-title > span {
+  font-size: 45px;
+}
+
+.championship-title h3 {
+  margin: 0;
+  font-size: 28px;
+  color: #003b70;
+}
+
+.championship-title p {
+  margin: 8px 0 0;
+  font-size: 17px;
+}
+
+.championship-menu {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.championship-menu a {
+  display: inline-block;
+  padding: 14px 22px;
+  background: #003b70;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.championship-menu a:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 600px) {
+
+  .championship-section {
+    padding: 30px 15px;
+  }
+
+  .championship-section h2 {
+    font-size: 27px;
+  }
+
+  .championship-title h3 {
+    font-size: 23px;
+  }
+
+  .championship-menu {
+    flex-direction: column;
+  }
+
+  .championship-menu a {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+}
   <style>
     * {
       box-sizing: border-box;
