@@ -796,6 +796,34 @@
 .calendar-match strong {
   color: #0072c6;
 }
+/* =========================
+   LOGO HOME
+========================= */
+
+.site-logo {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 18px;
+  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.25));
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 600px) {
+  .site-logo {
+    width: 115px;
+    height: 115px;
+  }
+
+  .hero h1 {
+    font-size: 31px;
+  }
+}
   </style>
 </head>
 
@@ -818,13 +846,21 @@
   </nav>
 
   <section class="hero">
-    <div class="star">⭐</div>
-    <h1>Malati Della Paganese</h1>
-    <p>
-      Tutto il mondo azzurrostellato in un unico posto.
-      News, risultati, calciomercato e tutta la passione per la Paganese.
-    </p>
-  </section>
+
+  <img
+    src="logo/logo.jpg"
+    alt="Malati Della Paganese"
+    class="site-logo"
+  >
+
+  <h1>Malati Della Paganese</h1>
+
+  <p>
+    Tutto il mondo azzurrostellato in un unico posto.
+    News, risultati, calciomercato e tutta la passione per la Paganese.
+  </p>
+
+</section>
 
   <main class="container">
 
