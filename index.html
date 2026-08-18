@@ -824,6 +824,66 @@
     font-size: 31px;
   }
 }
+    /* =========================
+   PROSSIMA PARTITA
+========================= */
+
+.match-teams {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  margin: 25px 0;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #003b70;
+  font-size: 20px;
+}
+
+.match-crest {
+  width: 105px;
+  height: 105px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 7px rgba(0,0,0,0.18));
+}
+
+.versus {
+  font-size: 22px;
+  font-weight: 900;
+  color: #0072c6;
+}
+
+.match-info {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+
+  .match-teams {
+    gap: 18px;
+  }
+
+  .match-crest {
+    width: 80px;
+    height: 80px;
+  }
+
+  .team {
+    font-size: 17px;
+  }
+
+  .versus {
+    font-size: 18px;
+  }
+}
   </style>
 </head>
 
@@ -949,8 +1009,12 @@
   <div class="match-teams">
 
     <div class="team">
-   <div class="crest-placeholder"></div>
-<strong>PAGANESE</strong>
+      <img
+        src="Paganese_Calcio_1926_logo.svg.webp"
+        alt="Paganese"
+        class="match-crest"
+      >
+      <strong>PAGANESE</strong>
     </div>
 
     <div class="versus">
@@ -958,20 +1022,24 @@
     </div>
 
     <div class="team">
-      <div class="crest-placeholder"></div>
-<strong>PALMESE</strong>
+      <img
+        src="PALMESE_SCUDETTO.jpg"
+        alt="Palmese"
+        class="match-crest"
+      >
+      <strong>PALMESE</strong>
     </div>
 
   </div>
 
   <div class="match-info">
     📅 <strong>30 AGOSTO 2026</strong><br>
-    ⏰ ORE 16:00<br>
+    ⏰ <strong>ORE 20:30</strong><br>
     🏟️ STADIO MARCELLO TORRE
   </div>
 
   <a class="button" href="Paganese-Palmese.html">
-    🔥 Vai alla partita
+    🔥 VAI ALLA PARTITA
   </a>
 
 </div>
