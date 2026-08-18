@@ -105,13 +105,16 @@
       padding: 0 20px 40px;
     }
 
-    .section-title {
-      font-size: 27px;
-      color: #003b70;
-      margin: 35px 0 18px;
-      border-left: 5px solid #0072c6;
-      padding-left: 12px;
-    }
+   .section-title {
+  font-size: 27px;
+  color: #003b70;
+  margin: 35px 0 18px;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.94);
+  border-left: 5px solid #0072c6;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
 
     .cards {
       display: grid;
@@ -250,6 +253,10 @@
   font-size: 32px;
   margin-bottom: 35px;
   color: #003b70;
+  background: rgba(255, 255, 255, 0.94);
+  padding: 14px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .squad-category {
@@ -259,9 +266,13 @@
 .squad-category h3 {
   font-size: 24px;
   margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 3px solid #003b70;
+  padding: 12px 16px;
+  border-left: 5px solid #0072c6;
+  border-bottom: none;
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 10px;
   color: #003b70;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .players-grid {
@@ -346,6 +357,10 @@
   font-size: 32px;
   color: #003b70;
   margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.94);
+  padding: 14px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .stadium-card {
@@ -514,8 +529,12 @@
   color: #003b70;
   font-size: 32px;
   margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.94);
+  padding: 14px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
-
+    
 .standings-card {
   background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(3px);
@@ -568,6 +587,10 @@
   color: #003b70;
   font-size: 32px;
   margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.94);
+  padding: 14px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .results-card {
@@ -648,6 +671,131 @@
 .result-teams {
   gap: 25px;
 }
+ /* =========================
+   CAMPIONATO
+========================= */
+
+.championship-section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.championship-section > h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #003b70;
+  background: rgba(255, 255, 255, 0.94);
+  padding: 14px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 25px;
+}
+
+.championship-header {
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+}
+
+.championship-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.championship-title > span {
+  font-size: 35px;
+}
+
+.championship-title h3 {
+  color: #003b70;
+  font-size: 24px;
+}
+
+.championship-title p {
+  color: #555;
+  margin-top: 3px;
+}
+
+.championship-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.championship-menu a {
+  text-align: center;
+  text-decoration: none;
+  color: #003b70;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.94);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.2s;
+}
+
+.championship-menu a:hover {
+  transform: translateY(-3px);
+  background: #eaf4fc;
+}
+  /* =========================
+   CALENDARIO
+========================= */
+
+.calendar-section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.calendar-section h2 {
+  text-align: center;
+  color: #003b70;
+  font-size: 32px;
+  background: rgba(255, 255, 255, 0.94);
+  padding: 14px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+.calendar-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.match-day {
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 15px;
+  padding: 18px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+}
+
+.day-number {
+  font-size: 13px;
+  font-weight: bold;
+  color: #0072c6;
+  margin-bottom: 10px;
+}
+
+.calendar-match {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #003b70;
+}
+
+.calendar-match strong {
+  color: #0072c6;
+}
   </style>
 </head>
 
@@ -680,7 +828,7 @@
 
   <main class="container">
 
-  <h2 class="section-title">📰 Ultime News</h2>
+  <h2 class="section-title">Ultime News</h2>
 
 <div class="cards">
 
@@ -754,7 +902,7 @@
 
     </div>
 
-    <h2 class="section-title">⚽ Prossima Partita</h2>
+    <h2 class="section-title">Prossima Partita</h2>
 
 <div class="match">
 
@@ -793,7 +941,7 @@
 </div>
 
 
-    <h2 class="section-title">💙⭐ La nostra passione</h2>
+    <h2 class="section-title">La nostra passione</h2>
 
     <div class="card">
       <h3>Una pagina nata dalla passione</h3>
@@ -1040,7 +1188,7 @@
       <span>🇮🇹</span>
       <div>
         <h3>GIRONE G</h3>
-        <p>Paganese Calcio 1926 💙⭐</p>
+        <p>Paganese Calcio 1926</p>
       </div>
     </div>
   </div>
